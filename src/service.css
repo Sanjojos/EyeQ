@@ -1,0 +1,75 @@
+.service {
+    background-image: url("serviceimg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20%;
+    padding-right: 50px;
+    color: #fff;
+  }
+  .h3 {
+    color: #fff;
+  }
+  .h3{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .margin {
+      height: 40vh;
+    }
+    .service  {
+      background-position: right;
+      padding-top: 50%;
+      height: 80vh;
+    }
+    .service  .row {
+      width: 100%;
+    }
+  }
+  .img-texts {
+    padding: 500px 0;
+  }
+  
+  .img-texts .row {
+    align-items: center;
+  }
+  
+  .img-texts img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .img-texts h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .img-texts p {
+    margin-bottom: 30px;
+  }
+  
+  .img-texts button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .img-texts button:hover {
+    background-color: #444;
+  }
+  .contact-form-section{
+    background-image: url("cont.jpg");
+    background-size: cover;
+  }

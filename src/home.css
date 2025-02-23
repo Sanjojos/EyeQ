@@ -1,0 +1,317 @@
+
+.main {
+    background-image: url("eye1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20%;
+    padding-right: 50px;
+    color: #fff;
+    animation: fadeIn 5s;
+  }
+  .main #heading h3 {
+    color: #fff;
+  }
+  .main #heading {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .margin {
+      height: 40vh;
+    }
+    .main {
+      background-position: right;
+      padding-top: 50%;
+      height: 80vh;
+    }
+    .main .row {
+      width: 100%;
+    }
+  }
+  .image-txt-section {
+    padding: 50px 0;
+  }
+  
+  .image-txt-section .row {
+    align-items: center;
+  }
+  
+  .image-txt-section img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: drop-shadow(1px 10px 15px );
+  }
+  
+  .image-txt-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .image-txt-section p {
+    margin-bottom: 30px;
+  }
+  
+  .image-txt-section button {
+   
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .image-txt-section button:hover {
+    background-color: #444;
+  }
+  .carousel-section {
+    padding: 80px 0; 
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 400px; 
+    object-fit:cover;
+    
+  }
+  
+  .carousel-caption {
+    bottom: 20px; 
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #000;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .image-txt-section img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 50px; 
+    }
+  }
+ 
+  .faq-header{
+    font-size: 42px;
+    border-bottom: 1px dotted #ccc;
+    padding: 24px;
+  }
+  
+  .faq {
+    margin: 0 auto;
+  }
+  
+  .faq-question {
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+  }
+  
+  .panel-title {
+    font-size: 18px;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 10px 10px 0 58px;
+    
+    cursor: pointer;
+  }
+  
+  .panel-content {
+    font-size: 18px;
+    padding: 0px 14px;
+    margin: 0 40px;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+   
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+  }
+  
+  .panel:checked ~.panel-content{
+    height: auto;
+    opacity: 1;
+    padding: 14px;
+  }
+  
+  .plus {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 4px;
+    z-index: 5;
+    font-size: 30px;
+    line-height: 100%;
+
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+  }
+  
+  .panel:checked ~ .plus {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  
+  .panel {
+    display: none;
+  }
+
+  .testimonials{
+    padding-bottom: 2.2em; 
+    text-align: center;
+    color: #666;
+}
+.testimonials h1{
+    color: #222;
+    font-size: 1.3em;
+}
+.testimonials .test-body{padding: 1em;}
+.testimonials .item{ 
+    text-align: center;
+    padding: 1em 0;
+}
+.testimonials img{
+    width: 4.8em;
+    height: 4.8em;
+    border-radius: 50%;
+}
+.testimonials .name{color: blue;}
+
+@media (min-width: 38.4rem){
+    .testimonials{
+        font-size: 1.2em;
+    }
+    .testimonials .test-body{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .testimonials p{
+        text-align: left;
+        padding: 1em;
+    }
+}
+.carousel-caption{
+  width: 50rem;
+  padding-left: 280px;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.image-txt-section, .testimonials {
+  animation: appear 1s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.image-text-section {
+  padding: 150px 0;
+}
+
+.image-text-section .row {
+  align-items: center;
+}
+
+.image-text-section img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: drop-shadow(1px 10px 15px );
+}
+
+.image-text-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.image-text-section p {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .image-text-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 50px; 
+  }
+}
+
+
+          @keyframes slideInLeft {
+            0% {
+              transform: translateX(-1500px);
+            }
+            40% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(0);
+              animation-duration: 5s;
+            }
+          }
+          
+          @keyframes slideInRight {
+            0% {
+              transform: translateX(1500px);
+            }
+            40% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(0);
+              animation-duration: 5s;
+            }
+          }
+          
+          #im9, #im7, #text8 {
+            animation: slideInLeft 2s ease-in-out;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+          
+          }
+          
+          #text9, #im8, #text7 {
+            animation: slideInRight 2s ease-in-out;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+            
+          }
+          #im9{
+           filter: drop-shadow(1px 10px 15px );
+          }
+          #im7{
+            filter: drop-shadow(1px 10px 15px );
+          }
+          #im8 {
+            filter: drop-shadow(1px 10px 15px );
+          }
